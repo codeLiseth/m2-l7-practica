@@ -1,1 +1,2 @@
-user
+user:Pepito palote
+credencial: nuevouso
