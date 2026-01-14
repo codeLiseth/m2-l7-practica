@@ -23,3 +23,34 @@ git commit -m "Mensaje descriptivo de los cambios generados"
 
 6. Verificar el log de versiones existentes
 git log / git log --oneline
+
+7. Ver diferencia entre una versión y otra / entre diferentes ramas
+
+git diff "hash version a" "hash version b"
+
+
+8. para moverse a una rama especifica o a una versión utilizar:
+
+git checkout "hash de la versión" / git checkout feature/documento2
+
+9. En caso de querer descartar los últimos cambios en un documento para volver a la última versión estable utilizar:
+git restore documento1.txt ->previo a esto ejecutar: git status
+
+10. Comando para listar las ramas existentes
+git branch
+
+11. Crear una nueva rama de trabajo
+git branch "nombre nueva rama" / git branch feature/login
+
+12. Cambiarse a la nueva rama
+git checkout "nombre_nueva_rama"
+
+13. ejecutar los 2 últimos pasos en uno:
+git checkout -b "nombre_nueva_rama"
+
+14. una vez que en esa rama se cree al menos 1 versión fusionar cambios
+- git checkout main/master -> volver a la rama principal
+- git merge "rama_2"
+
+15. si queremos eliminar una rama porque cumplió su objetivo o simplemente se descartó
+git branch -d "nombre_rama"
